@@ -5,24 +5,26 @@
 
 body{
     font-family: Hanken Grotesk;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+}    
+
+.full-body{
+    max-width: 1440px;
+    min-width: 375px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
 
-.full-body{
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
-    max-width: 1440px;
-    min-width: 375px;
+    position: absolute;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px rgb(221, 222, 235);
 }
 
 .result-box{
-    background: linear-gradient(to top,hsl(241, 96%, 62%), hsl(252, 88%, 64%));
+    background: linear-gradient(180deg, hsla(256, 100%, 63%, 1) 35%, hsla(241, 79%, 55%, 1) 100%);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -92,7 +94,6 @@ body{
     padding: 3%;
     width: 50%;
     border-radius: 20px;
-    box-shadow: 10px 10px 50px rgb(221, 222, 235);
 }
 
 .summary{
@@ -105,25 +106,28 @@ body{
     color: #FF5555;
     padding: 2%;
     flex-grow: 1;
-
+    font-weight: 650;
 }
 
 .memory{
     color: #FFB21E;
     padding: 2%;
     flex-grow: 1;
+    font-weight: 650;
 }
 
 .verbal{
     color: #00BB8F;
     padding: 2%;
     flex-grow: 1;
+    font-weight: 650;
 }
 
 .visual{
     color: #1629D7;
     padding: 2%;
     flex-grow: 1;
+    font-weight: 650;
 }
 
 .imgs{
@@ -136,13 +140,20 @@ body{
 
 .marks{
     padding: 1%;
+    color: hsl(233, 14%, 75%);
+    font-weight: 650;
+}
+
+span{
+    color: black;
+    padding: 4px;
 }
 
 .reaction-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: hsl(0, 100%, 89%);
+    background: #FFF6F5;
     border-radius: 7px;
     padding: 3%;
     margin: 2%;
@@ -152,7 +163,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: hsl(39, 100%, 89%);
+    background: #FFFBF2;
     border-radius: 7px;
     padding: 3%;
     margin: 2%;
@@ -161,7 +172,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: hsl(166, 43%, 75%);
+    background: #F2FBFA;
     border-radius: 7px;
     padding: 3%;
     margin: 2%;
@@ -170,7 +181,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: hsl(234, 100%, 88%);
+    background: #F3F3FD;
     border-radius: 7px;
     padding: 3%;
     margin: 2%;
@@ -192,5 +203,3 @@ button:hover{
 .button{
     padding: 5%;
 }
-
-
